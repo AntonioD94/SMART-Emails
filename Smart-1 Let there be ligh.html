@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <!--[if mso]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  <![endif]-->
+
+    <!--[if mso]>
+  <style type="text/css">
+    ul, ol {margin: 0 !important;padding: 0 !important;}
+    li {margin-left: 25px !important;}
+  </style>
+ <![endif]-->
+    
+
+    <style type="text/css">
+@font-face {
+  font-family: 'FOR smart Sans';
+  src: local('FOR smart Sans'), local('FOR smart Sans Regular'),
+                url('https://uploads.feed.xyz/mercury/SmartFonts/img/FORsmartSansWeb-Regular.woff2') format('woff2'),
+                url('https://uploads.feed.xyz/mercury/SmartFonts/img/FORsmartSansWeb-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: normal;}
+@font-face {
+  font-family: 'FOR smart Sans';
+  src: local('FOR smart Sans'), local('FOR smart Sans Bold'),
+                url('https://uploads.feed.xyz/mercury/SmartFonts/img/FORsmartSansWeb-Bold.woff2') format('woff2'),
+                url('https://uploads.feed.xyz/mercury/SmartFonts/img/FORsmartSansWeb-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: bold;}
+@media handheld,
+        only screen and (-webkit-min-device-pixel-ratio:3.0) and (max-width:1080px),
+        screen and (max-width:480px) {
+  div.generic {
+    min-width: calc(100vw - 30px) !important;
+  }
+
+  .column {
+    display: block !important;
+  }
+
+  .column-top {
+    display: table-header-group !important;
+    width: 100% !important;
+  }
+
+  .column-bottom {
+    display: table-footer-group !important;
+    width: 100% !important;
+  }
+
+  .blueFix span,
+.blueFix span:hover {
+    border-bottom: 0px none transparent !important;
+  }
+
+  .blueFix a {
+    text-decoration: none !important;
+    white-space: nowrap;
+    color: inherit !important;
+    border-bottom: none !important;
+  }
+
+  img {
+    display: block !important;
+  }
+
+  .backgroundnone {
+    background-image: none !important;
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+  }
+
+  .hide {
+    display: none !important;
+    font-size: 0 !important;
+    max-height: 0 !important;
+    line-height: 0 !important;
+  }
+
+  .show_on_mobile {
+    display: block !important;
+    width: auto !important;
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    float: none !important;
+  }
+
+  .break {
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    line-height: 1px !important;
+    min-height: 1px !important;
+    max-height: 1px !important;
+  }
+
+  .heightauto {
+    height: auto !important;
+  }
+
+  .fullheight {
+    height: 100% !important;
+  }
+
+  .widthauto {
+    width: auto !important;
+  }
+
+  .fullwidth {
+    width: 100% !important;
+  }
+
+  .halfwidth {
+    width: 50% !important;
+  }
+
+  .imgfullwidth {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .imgfullheight {
+    width: auto !important;
+    height: 100% !important;
+  }
+
+  .alc {
+    text-align: center !important;
+  }
+
+  .all {
+    text-align: left !important;
+  }
+
+  .alr {
+    text-align: right !important;
+  }
+
+  u+.body .glist {
+    margin-left: 0 !important;
+  }
+
+  .wrap,
+.wrap span {
+    white-space: normal !important;
+  }
+}
+</style>
+    
+    <style type="text/css">
+@media handheld,
+        only screen and (-webkit-min-device-pixel-ratio:3.0) and (max-width:1080px),
+        screen and (max-width:480px) {
+  .column-top {
+    display: table-header-group !important;
+    width: 100% !important;
+  }
+
+  .column-bottom {
+    display: table-footer-group !important;
+    width: 100% !important;
+  }
+
+  div.body {
+    min-width: 100vw !important;
+  }
+
+  .pt0 {
+    padding-top: 0px !important;
+  }
+
+  .pl0 {
+    padding-left: 0px !important;
+  }
+
+  .pt56 {
+    padding-top: 56px !important;
+  }
+
+  .pb20 {
+    padding-bottom: 20px !important;
+  }
+
+  .pb40 {
+    padding-bottom: 40px !important;
+  }
+
+  .plr40 {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  .pl40 {
+    padding-left: 40px !important;
+  }
+
+  .p0 {
+    padding: 0px !important;
+  }
+
+  .p4 {
+    padding: 4px !important;
+  }
+
+  .p5 {
+    padding: 5px !important;
+  }
+
+  .p8 {
+    padding: 8px !important;
+  }
+
+  .p10 {
+    padding: 10px !important;
+  }
+
+  .p15 {
+    padding: 15px !important;
+  }
+
+  .p16 {
+    padding: 16px !important;
+  }
+
+  .p20 {
+    padding: 20px !important;
+  }
+
+  .p24 {
+    padding: 24px !important;
+  }
+
+  .p25 {
+    padding: 25px !important;
+  }
+
+  .p30 {
+    padding: 30px !important;
+  }
+
+  .p32 {
+    padding: 32px !important;
+  }
+
+  .p35 {
+    padding: 35px !important;
+  }
+
+  .pt0 {
+    padding-top: 0px !important;
+  }
+
+  .pt4 {
+    padding-top: 4px !important;
+  }
+
+  .pt5 {
+    padding-top: 5px !important;
+  }
+
+  .pt8 {
+    padding-top: 8px !important;
+  }
+
+  .pt10 {
+    padding-top: 10px !important;
+  }
+
+  .pt15 {
+    padding-top: 15px !important;
+  }
+
+  .pt16 {
+    padding-top: 16px !important;
+  }
+
+  .pt20 {
+    padding-top: 20px !important;
+  }
+
+  .pt24 {
+    padding-top: 24px !important;
+  }
+
+  .pt25 {
+    padding-top: 25px !important;
+  }
+
+  .pt30 {
+    padding-top: 30px !important;
+  }
+
+  .pt32 {
+    padding-top: 32px !important;
+  }
+
+  .pt35 {
+    padding-top: 35px !important;
+  }
+
+  .pt40 {
+    padding-top: 40px !important;
+  }
+
+  .pr0 {
+    padding-right: 0px !important;
+  }
+
+  .pr4 {
+    padding-right: 4px !important;
+  }
+
+  .pr5 {
+    padding-right: 5px !important;
+  }
+
+  .pr8 {
+    padding-right: 8px !important;
+  }
+
+  .pr10 {
+    padding-right: 10px !important;
+  }
+
+  .pr15 {
+    padding-right: 15px !important;
+  }
+
+  .pr16 {
+    padding-right: 16px !important;
+  }
+
+  .pr20 {
+    padding-right: 20px !important;
+  }
+
+  .pr24 {
+    padding-right: 24px !important;
+  }
+
+  .pr25 {
+    padding-right: 25px !important;
+  }
+
+  .pr30 {
+    padding-right: 30px !important;
+  }
+
+  .pr32 {
+    padding-right: 32px !important;
+  }
+
+  .pr35 {
+    padding-right: 35px !important;
+  }
+
+  .pr40 {
+    padding-right: 40px !important;
+  }
+
+  .pb0 {
+    padding-bottom: 0px !important;
+  }
+
+  .pb4 {
+    padding-bottom: 4px !important;
+  }
+
+  .pb5 {
+    padding-bottom: 5px !important;
+  }
+
+  .pb8 {
+    padding-bottom: 8px !important;
+  }
+
+  .pb10 {
+    padding-bottom: 10px !important;
+  }
+
+  .pb15 {
+    padding-bottom: 15px !important;
+  }
+
+  .pb16 {
+    padding-bottom: 16px !important;
+  }
+
+  .pb20 {
+    padding-bottom: 20px !important;
+  }
+
+  .pb24 {
+    padding-bottom: 24px !important;
+  }
+
+  .pb25 {
+    padding-bottom: 25px !important;
+  }
+
+  .pb30 {
+    padding-bottom: 30px !important;
+  }
+
+  .pb32 {
+    padding-bottom: 32px !important;
+  }
+
+  .pb35 {
+    padding-bottom: 35px !important;
+  }
+
+  .pb40 {
+    padding-bottom: 40px !important;
+  }
+
+  .pb56 {
+    padding-bottom: 56px !important;
+  }
+
+  .pl0 {
+    padding-left: 0px !important;
+  }
+
+  .pl4 {
+    padding-left: 4px !important;
+  }
+
+  .pl5 {
+    padding-left: 5px !important;
+  }
+
+  .pl8 {
+    padding-left: 8px !important;
+  }
+
+  .pl10 {
+    padding-left: 10px !important;
+  }
+
+  .pl15 {
+    padding-left: 15px !important;
+  }
+
+  .pl16 {
+    padding-left: 16px !important;
+  }
+
+  .pl20 {
+    padding-left: 20px !important;
+  }
+
+  .pl24 {
+    padding-left: 24px !important;
+  }
+
+  .pl25 {
+    padding-left: 25px !important;
+  }
+
+  .pl30 {
+    padding-left: 30px !important;
+  }
+
+  .pl32 {
+    padding-left: 32px !important;
+  }
+
+  .pl35 {
+    padding-left: 35px !important;
+  }
+
+  .plr31 {
+    padding-left: 31px !important;
+    padding-right: 31px !important;
+  }
+
+  .h270 {
+    height: 270px !important;
+  }
+
+  u+.body .glist {
+    margin-left: 25px !important;
+  }
+}
+</style>
+    <style type="text/css">
+@media (prefers-color-scheme:dark) {
+  p,
+a,
+li {
+    color: #FFFFFE !important;
+  }
+
+  .dark-copy {
+    color: #141413 !important;
+  }
+
+  .dark-bg {
+    background-color: #141413 !important;
+  }
+
+  .dark-bg td>p>a {
+    color: #FFFFFE !important;
+  }
+
+  .button {
+    background-color: #FFFFFE !important;
+    border-color: #FFFFFE !important;
+  }
+
+  .button tr td p a span {
+    color: #141413 !important;
+  }
+
+  .button td {
+    border-color: #FFFFFE !important;
+  }
+
+  .button2 {
+    background-color: #141413 !important;
+    border-color: #FFFFFE !important;
+  }
+
+  .button2 tr td p a span {
+    color: #FFFFFE !important;
+  }
+
+  .button2 td {
+    border-color: #FFFFFE !important;
+  }
+
+  #MessageViewBody a {
+    color: inherit !important;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }
+}
+</style>
+    <style type="text/css"></style>
+    <style type="text/css">
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .webkit-only {
+    display: block !important;
+    max-height: none !important;
+  }
+
+  .fallback {
+    font-size: 0 !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+    display: none !important;
+  }
+
+  label {
+    padding: 0;
+    margin: 0;
+  }
+
+  #switch-on:checked~#webkit-only .img-on {
+    display: block !important;
+  }
+
+  #switch-on:checked~#webkit-only .img-off {
+    display: none !important;
+  }
+
+  #switch-off:checked~#webkit-only .img-on {
+    display: none !important;
+  }
+
+  #switch-off:checked~#webkit-only .img-off {
+    display: block !important;
+  }
+}
+</style>
+    <style type="text/css"></style>
+</head>
+
+<body class="generic" bgcolor="#ffffff">
+    <!--| START: global_v3_2/wrapper_top |-->
+    <table lang="en" role="article" aria-roledescription="email" aria-label="Smart Newsletter" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="wrapperMod dark-bg">
+        <tr>
+            <td align="center">
+                <table align="center" width="750" border="0" cellspacing="0" cellpadding="0" class="inWrapperMod fullwidth dark-bg" role="presentation" bgcolor="#fffffe">
+                    <tr>
+                        <td align="center">
+                            <!--| START: preheader |-->
+                            <div style="display:none">
+                                Well, it’s time to get a move on.
+                            </div>
+
+                            <div style="display:none">
+                                {% let firstName = "" %}
+
+                                {%#if isNull(profile._smarteurope.lead.firstName) and
+                                isNull(profile._smarteurope.name.firstName) %}
+                                {% let firstName = "" %}
+
+                                {%else if isNotNull(profile._smarteurope.lead.firstName) and
+                                isNotNull(profile._smarteurope.name.firstName) %}
+                                {% let firstName = profile._smarteurope.lead.firstName %}
+
+                                {%else%}
+
+                                {%#unless profile._smarteurope.lead.firstName%}
+                                {% let firstName = profile._smarteurope.name.firstName %}
+
+                                {%else%}
+
+                                {% let firstName = profile._smarteurope.lead.firstName %}
+                                {%/unless%}
+
+                                {%/if%}
+
+                                {% let news = "" %}
+                                {% let rms = "" %}
+                                {% let vip = "" %}
+                                {% let subscriberID = "" %}
+
+                                {{#each profile._smarteurope.subscriptions.newsletter as |newsname|}}
+                                {{#each newsname.details as |newsdet|}}
+                                {% let news = newsdet.isSubscribed %}
+                                {{/each}}
+                                {{/each}}
+
+                                {{#each profile._smarteurope.subscriptions.reserveMySeat as |rmsname|}}
+                                {{#each rmsname.details as |rmsdet|}}
+                                {% let rms = rmsdet.isSubscribed %}
+                                {{/each}}
+                                {{/each}}
+
+                                {{#each profile._smarteurope.subscriptions.vip as |vipname|}}
+                                {{#each vipname.details as |vipdet|}}
+                                {% let vip = vipdet.isSubscribed %}
+                                {{/each}}
+                                {{/each}}
+
+                                {%#if news%}{% let subscriberID = "smart_NLwithDOI_EU" %}{%/if%}
+                                {%#if rms%}{% let subscriberID = "smart_RMS_NLwithDOI_EU" %}{%/if%}
+                                {%#if vip%}{% let subscriberID = "smart_VIP_NLwithDOI_EU" %}{%/if%}
+                            </div>
+
+                            <div style="display: none; max-height: 0px; overflow: hidden;">
+                                &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+                            </div>
+                            <table width="750" border="0" cellspacing="0" cellpadding="0" align="center" class="fullwidth" role="presentation" bgcolor="#141413">
+                                <tr>
+                                    <td width="100%" height="79" align="center" style="background: url('https://uploads.feed.xyz/mercury/DB-7/img/header-bg.png'); background-position: center;  background-size:cover ;vertical-align:top;" valign="top" class="fullwidth hero">
+                                        <!--[if gte mso 9]>
+            <img src="https://uploads.feed.xyz/mercury/DB-7/img/header-bg.png" height="79" width="750" border="0" style="display: none;" />
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="false" stroke="false" style="position:relative;top:0;left:0;width:750px; height: 79px;" >
+            <v:textbox inset="0,0,0,0">
+            <![endif]-->
+                                        <div class="fullwidth p0" role="img">
+                                            <table width="750" border="0" cellspacing="0" cellpadding="0" align="center" class="fullwidth " role="presentation">
+                                                <tr>
+                                                    <td height="79" style="font-size:1px;line-height:1px;vertical-align:middle; padding:0px 0px 0px 0px;" align="center">
+                                                        <a href="">
+                                                            <img src="https://uploads.feed.xyz/mercury/DB-7/img/logo.png" alt="" width="40">
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </div>
+                                        <!--[if gte mso 9]>
+            </v:textbox>
+            </v:rect>
+            <![endif]-->
+                                    </td>
+                                </tr>
+                            </table><!--[if !mso]><!-- -->
+                            <input id="switch-on" style="display:none;" name="light-switch" type="radio">
+                            <input id="switch-off" style="display:none;" name="light-switch" type="radio" checked="">
+                            <div id="webkit-only" class="webkit-only" style="font-size:0; max-height:0; overflow:hidden; display:none">
+                                <table width="750" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" class="fullwidth dark-bg" bgcolor="#FFFFFE">
+                                    <tr>
+                                        <td style="font-size:1px;line-height:1px;" align="right">
+                                            <div class="show_on_mobile" style="display:none;">
+                                                <a href="" style="text-decoration:none; color:#000000;">
+                                                    <img src="https://mercury.feed.xyz/api/clients/ada7618f-3afc-4541-bc9b-cb5ddd9d9e5b/images/33e5b426-9f57-4389-baec-d1dc930c8ed8/image" alt="||Column1_Image_Alt_On||" class="img-on">
+                                                </a>
+                                                <label for="switch-on">
+
+                                                    <img src="https://mercury.feed.xyz/api/clients/ada7618f-3afc-4541-bc9b-cb5ddd9d9e5b/images/d93aae80-437e-41a8-aa13-8f457b17bb5b/image" alt="" class="img-off">
+
+                                                </label>
+                                            </div>
+                                            <div class="hide">
+                                                <a href="" style="text-decoration:none; color:#000000;">
+                                                    <img align="right" src="https://mercury.feed.xyz/api/clients/ada7618f-3afc-4541-bc9b-cb5ddd9d9e5b/images/da5672d8-fd40-4d33-aed1-cb07f9589c38/image" alt="||Column1_Image_Alt_On||" width="750" class="img-on">
+                                                </a>
+                                                <label for="switch-on">
+
+                                                    <img align="right" src="https://mercury.feed.xyz/api/clients/ada7618f-3afc-4541-bc9b-cb5ddd9d9e5b/images/edfb1302-7286-4022-925c-03453b44e827/image" alt="" width="750" class="img-off">
+
+                                                </label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!--<![endif]-->
+                            <div id="fallback" class="fallback">
+                                <table width="750" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" class="fullwidth dark-bg" bgcolor="#FFFFFE">
+                                    <tr>
+                                        <td style="font-size:1px;line-height:1px;" align="right">
+                                            <!--| START: Mobile |-->
+                                            <!--[if !mso]><!-->
+                                            <div class="show_on_mobile" style="display:none;height:0px;max-height:0px;mso-hide:all;">
+                                                <a href="" style="text-decoration:none; color:#000000;">
+                                                    <img src="" alt="" class="">
+                                                </a>
+                                            </div>
+                                            <!--<![endif]-->
+                                            <!--| END: Mobile |-->
+                                            <!--| START: Desktop |-->
+                                            <div align="right" class="hide">
+                                                <a href="" style="text-decoration:none; color:#000000;">
+                                                    <img align="right" src="" alt="" width="750" class="">
+                                                </a>
+                                            </div>
+                                            <!--| END: Desktop |-->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" class="fullwidth dark-bg" bgcolor="#141413">
+                                <tr>
+                                    <td style="padding:56px 40px 40px 40px;">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" class="fullwidth dark-bg" bgcolor="#141413">
+                                            <tr>
+                                                <td style="font-size:1px;line-height:1px; padding:0 0 16px 0;" align="left">
+                                                    <p style="mso-line-height-rule:exactly;margin:0;line-height:48px;font-family:Helvetica,Arial,sans-serif,'FOR smart Sans';font-size:40px;color:#FFFFFE;font-weight:700;text-decoration:none;" align="left">
+                                                        Seasons greetings from smart
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" class="fullwidth dark-bg" bgcolor="#FFFFFE">
+                                <tr>
+                                    <td style="padding:56px 40px 56px 40px;">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" class="fullwidth dark-bg" bgcolor="#FFFFFE">
+                                            <tr>
+                                                <td style="font-size:1px;line-height:1px; padding:0 0 16px 0;" align="left">
+                                                    <p style="mso-line-height-rule:exactly;margin:0;line-height:48px;font-family:Helvetica,Arial,sans-serif,'FOR smart Sans';font-size:40px;color:#000000;font-weight:700;text-decoration:none;" align="left">
+                                                        Let there be light…
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size:1px;line-height:1px; padding:0 0 0 0;">
+                                                    <p style="mso-line-height-rule:exactly;margin:0;line-height:28px;font-family:Helvetica,Arial,sans-serif,'FOR smart Sans';font-size:18px;color:#000000;font-weight:400;text-decoration:none;" align="left">
+                                                        It’s the perfect time of year for us to say a warm thank you for
+                                                        welcoming smart into your new electric lifestyle. There’s lots
+                                                        of exciting things happening over the coming weeks – including
+                                                        the spring 2023 opening for pre-order, and we’d love to keep you
+                                                        informed – so stay tuned.
+                                                        <br><br>
+                                                        We’re thrilled to have you on board and the entire smart team is
+                                                        delighted to wish you a happy holiday and an even better new
+                                                        year as we write this exciting first chapter of your urban
+                                                        future together.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-size:1px;line-height:1px;padding:32px 0 0 0;" align="left">
+                                                    <div style="font-size:1px;line-height:1px;" align="left" class="all">
+                                                        <table border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFE" style="display:inline-table;border-radius:100px;border-collapse:separate; border: 1px solid #000000" role="presentation" class="button">
+                                                            <tr>
+                                                                <td height="50" style="font-size:1px;line-height:1px;vertical-align:middle;padding:0px 36px 0px 36px;border-radius:100px;border-collapse:separate;" align="center" valign="middle" class="h44">
+                                                                    <p style="mso-line-height:exactly;margin:0;line-height:18px;font-family:Helvetica,Arial,sans-serif,'FOR smart Sans';font-size:15px;font-weight:700;color:#141413;text-align:center;vertical-align:middle;" align="center">
+                                                                        <a href="" style="color:#141413;text-decoration:none;" class="focus">
+                                                                            <span class="wrap" style="white-space:nowrap;">
+                                                                                Learn more
+                                                                            </span>
+                                                                        </a>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="750" border="0" cellspacing="0" cellpadding="0" class="fullwidth dark-bg" align="center" bgcolor="#ffffff">
+                                <tr>
+                                    <td style="font-size:1px; line-height:1px;padding:56px 16px 0px 16px;" align="center" class="plr40">
+                                        <table width="670" border="0" cellspacing="0" cellpadding="0" class="fullwidth" bgcolor="#B9B9B9" align="center">
+                                            <tr>
+                                                <td style="font-size:1px;line-height:1px;" align="center">
+                                                    <img src="https://uploads.feed.xyz/mercury/Smart_Car_Test/img/spacer.gif" height="" width="1" border="0" alt="" title="" style="display:block;">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table width="750" border="0" cellspacing="0" cellpadding="0" class="fullwidth dark-bg" align="center" bgcolor="#ffffff">
+                                <tr>
+                                    <td style="font-size:1px; line-height:1px;" align="center">
+
+                                        <table width="750" border="0" cellspacing="0" cellpadding="0" class="fullwidth dark-bg" align="center" bgcolor="#ffffff">
+                                            <tr>
+                                                <td style="font-size:1px; line-height:1px;padding:56px 0px 0px 0px;" align="center" class="plr40">
+                                                    <table width="264" border="0" cellspacing="0" cellpadding="0" class="fullwidth dark-bg" bgcolor="#ffffff" align="center">
+                                                        <tr>
+                                                            <td style="font-size:1px;line-height:1px;" align="center">
+                                                                <a href="https://twitter.com/smart_worldwide"><img src="https://uploads.feed.xyz/mercury/DB-4_WP_Happened/img/Twitter.png" height="24" width="24" alt="" style="display:block;"></a>
+                                                            </td>
+                                                            <td style="font-size:1px;line-height:1px;" align="center">
+                                                                <a href="https://www.facebook.com/smart"><img src="https://uploads.feed.xyz/mercury/DB-4_WP_Happened/img/Facebook.png" height="24" width="24" alt="" style="display:block;"></a>
+                                                            </td>
+                                                            <td style="font-size:1px;line-height:1px;" align="center">
+                                                                <a href="https://www.instagram.com/smart_worldwide/"><img src="https://uploads.feed.xyz/mercury/DB-4_WP_Happened/img/Instagram.png" height="24" width="24" alt="" style="display:block;"></a>
+                                                            </td>
+                                                            <td style="font-size:1px;line-height:1px;" align="center">
+                                                                <a href="https://www.linkedin.com/company/smart-europe-gmbh/"><img src="https://uploads.feed.xyz/mercury/DB-4_WP_Happened/img/LinkedIn.png" height="24" width="24" alt="" style="display:block;"></a>
+                                                            </td>
+                                                            <td style="font-size:1px;line-height:1px;" align="center">
+                                                                <a href="https://www.tiktok.com/@smart"><img src="https://uploads.feed.xyz/mercury/DB-4_WP_Happened/img/TikTok.png" height="24" width="24" alt="" style="display:block;"></a>
+                                                            </td>
+                                                            <td style="font-size:1px;line-height:1px;" align="center">
+                                                                <a href="https://www.youtube.com/channel/UCJsZpxZGgpvgn4sF2Rs6l9g"><img src="https://uploads.feed.xyz/mercury/DB-4_WP_Happened/img/Youtube.png" height="24" width="24" alt="" style="display:block;"></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="750" border="0" cellspacing="0" cellpadding="0" class="fullwidth dark-bg" align="center" bgcolor="#ffffff">
+                                            <tr>
+                                                <td style="font-size:1px; line-height:1px;padding:70px 0px 0px 0px;" align="center" class="plr31">
+                                                    <table width="534" border="0" cellspacing="0" cellpadding="0" class="fullwidth dark-bg" bgcolor="#ffffff" align="center">
+                                                        <tr>
+                                                            <td style="font-size:p1x;line-height:1px;" align="center">
+                                                                <p class="blueFix" style="mso-line-height-rule:exactly;margin:0;line-height:16px;font-family:Helvetica,Arial,sans-serif,'FOR smart Sans';font-size:12px;color:#6B747B;font-weight:400;text-decoration:none;text-align:center;">
+                                                                    smart Europe GmbH<br>
+                                                                    Esslinger Strasse 7 | 70771 Leinfelden-Echterdingen
+                                                                    | Germany</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table width="750" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" class="fullwidth dark-bg" bgcolor="#FFFFFF">
+                                            <tr>
+                                                <td style="font-size:1px; line-height:1px;" align="center">
+                                                    <table width="710" border="0" cellspacing="0" cellpadding="0" align="center" role="presentation" class="fullwidth">
+                                                        <tr>
+                                                            <td style="font-size:1px;line-height:1px;padding:70px 20px 56px 20px;" align="center" class="pb20 pr40 pl40 column">
+                                                                <p style="mso-line-height-rule:exactly;margin:0;line-height:22px;font-family:Helvetica,Arial,sans-serif,'FOR smart Sans';font-size:14px;color:#000000;font-weight:700;text-decoration:none;" align="center">
+                                                                    <a href="https://uk.smart.com/en/" style="color: #000000; text-decoration:none">smart.com</a>
+                                                                </p>
+                                                            </td>
+                                                            <td style="font-size:1px;line-height:1px;padding:70px 20px 56px 20px;" align="center" class="pb20 pt0 pl40 pr40 column">
+                                                                <p style="mso-line-height-rule:exactly;margin:0;line-height:22px;font-family:Helvetica,Arial,sans-serif,'FOR smart Sans';font-size:14px;color:#000000;font-weight:700;text-decoration:none;" align="center">
+                                                                    <a href="https://uk.smart.com/en/service/legal/" style="color: #000000; text-decoration:none">Legal</a>
+                                                                </p>
+                                                            </td>
+                                                            <td style="font-size:1px;line-height:1px;padding:70px 20px 56px 20px;" align="center" class="pb20 pt0 pl40 pr40 column">
+                                                                <p style="mso-line-height-rule:exactly;margin:0;line-height:22px;font-family:Helvetica,Arial,sans-serif,'FOR smart Sans';font-size:14px;color:#000000;font-weight:700;text-decoration:none;" align="center">
+                                                                    <a href="https://uk.smart.com/en/service/data-protection/" style="color: #000000; text-decoration:none">Data
+                                                                        Protection</a>
+                                                                </p>
+                                                            </td>
+                                                            <td style="font-size:1px;line-height:1px;padding:70px 20px 56px 20px;" align="center" class="pb20 pt0 pl40 pr40 column">
+                                                                <p style="mso-line-height-rule:exactly;margin:0;line-height:22px;font-family:Helvetica,Arial,sans-serif,'FOR smart Sans';font-size:14px;color:#000000;font-weight:700;text-decoration:none;" align="center">
+                                                                    <a href="https://uk.smart.com/en/service/contact/" style="color: #000000; text-decoration:none">Contact</a>
+                                                                </p>
+                                                            </td>
+                                                            <td style="font-size:1px;line-height:1px;padding:70px 20px 56px 20px;" align="center" class="pt0 pl40 pr40 column">
+                                                                <p style="mso-line-height-rule:exactly;margin:0;line-height:22px;font-family:Helvetica,Arial,sans-serif,'FOR smart Sans';font-size:14px;color:#000000;font-weight:700;text-decoration:none;" align="center">
+                                                                    <a href="" style="color: #000000; text-decoration:none">Unsubscribe</a>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
